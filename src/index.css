@@ -1,0 +1,48 @@
+:root {
+    --grey-color: #242424;
+    
+    --bg-color: var(--white-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+section {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (orientation: portrait) {
+    .container {
+        width: 45%;
+    }
+
+    .display {
+        p {
+            font-size: 22.5vw;
+        }
+    }
+}

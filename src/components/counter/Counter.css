@@ -1,0 +1,51 @@
+:root {
+    --red-color: #f84848;
+    --white-color: white;
+
+    --font-color: var(--white-color);
+    --counter-bg: var(--red-color);
+}
+
+.display {
+    width: 100%;
+    aspect-ratio: 1;
+    color: var(--font-color);
+    background-color: var(--counter-bg);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    p {
+        font-size: 5vw;
+        font-family: "Pixelify Sans";
+        text-align: center;
+    }
+}
+
+.move-up {
+    animation: moveUp 0.5s cubic-bezier(0,1.26,1,1.09);
+}
+  
+.move-down {
+    animation: moveDown 0.5s cubic-bezier(0,1.26,1,1.09);
+}
+  
+@keyframes moveUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+@keyframes moveDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}

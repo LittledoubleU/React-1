@@ -1,0 +1,17 @@
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    all: unset;
+    width: 65%;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    color: var(--red-color);
+}
