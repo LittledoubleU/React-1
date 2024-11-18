@@ -1,6 +1,8 @@
 import { Counter } from './components/counter/counter.jsx'
 import CounterButton from './components/button/CounterButton.jsx';
 import { useState } from 'react'
+import ArrowUp from './assets/icon/arrow_up.svg';
+import ArrowDown from './assets/icon/arrow_down.svg';
 
 function App() {
 
@@ -25,9 +27,9 @@ function App() {
     return (
         <section>
             <div className="container">
-                <CounterButton img={"../src/assets/icon/arrow_up.svg"} func={increase}/>
+                <CounterButton img={ArrowUp} func={increase}/>
                 <Counter count={count} animation={numAnimation} handleAnimationEnd={handleAnimationEnd}/>
-                <CounterButton img={"../src/assets/icon/arrow_down.svg"} func={decrease}/>
+                <CounterButton img={ArrowDown} func={decrease}/>
             </div>
         </section>
     )
