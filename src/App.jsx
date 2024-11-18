@@ -1,8 +1,8 @@
 import { Counter } from './components/counter/counter.jsx'
 import CounterButton from './components/button/CounterButton.jsx';
 import { useState } from 'react'
-import ArrowUp from './assets/icon/arrow_up.svg';
-import ArrowDown from './assets/icon/arrow_down.svg';
+import ArrowUp from '/assets/icon/arrow_up.svg';
+import ArrowDown from '/assets/icon/arrow_down.svg';
 
 function App() {
 
