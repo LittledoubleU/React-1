@@ -1,9 +1,9 @@
 {
+  "homepage": "http://LittledoubleU.github.io/React-1",
   "name": "counter-app-exercise",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://LittledoubleU.github.io/React-1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
